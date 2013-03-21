@@ -1,0 +1,60 @@
+db03 192.168.0.3
+db04 192.168.0.4
+db05 192.168.0.5
+db06 192.168.0.6
+
+hgg03269 212087  202.114.1.94 255.255.255.128 202.114.1.126 202.112.20.131
+
+pc
+
+SSH OK
+HADOOP OK
+HBASE OK
+HIVE OK
+PIG OK
+
+18M 57S 300MS
+
+
+
+3/4 built hadoop and hbase set ssh
+3/5 bliut hive and pig
+3/6 nothing but tanslation
+3/7 run the benchmark
+3/8 db06 repair run benchmark again
+
+3/11 研究了cache
+3/12 写map
+3/13 讨论reduce处理方案无果
+3/14 整理context的结构
+3/15 编译源码，调试程序，map ok，reduce deepclone失败，
+weekend 尝试重写封装框架，测试70次后，宣布无效，无法克隆inputstream
+
+3/18 
+
+init
+
+input n table
+
+设置kr（桶的数量，reduce的数量）OK
+
+算出表的行数（元组数） OK
+计算单元（所有可能的连接结果）个数 ok
+计算桶大小 ok
+
+对单元编号 ？
+
+算出元组发送集合 元组所有可能的单元对应的桶的集合 关键是这部的执行时间
+
+map
+
+tablenum table line
+上下界单元编号/tongsize = 对应桶编号
+
+getpartition 重写
+
+
+
+reduce
+
+ RecordReader and FileStatus
